@@ -15,8 +15,8 @@ answer = get_string("What's your name? ")
 
 ```
 
-Don't need to specify the type 
-you don't need to use ;
+- Don't need to specify the type 
+- you don't need to use ;
 
 ### print
 
