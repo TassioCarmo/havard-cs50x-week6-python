@@ -52,4 +52,6 @@ else:
 differences:
 
 - no {} or ()
+- Uses :
+- identention is important
 
