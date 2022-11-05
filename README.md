@@ -1,1 +1,3 @@
-# cs50x-week6-python
+#Introduction to Python
+
+## What did i learn
