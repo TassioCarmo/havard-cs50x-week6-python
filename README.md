@@ -251,3 +251,17 @@ print()
 
 print("#" *3);
 ```
+
+## Lists, strings
+```
+from cs50 import get_int
+
+scores = []
+for i in range(3):
+    score = get_int("Score: ")
+    scores.append(score)
+  
+average = sum(scores) / len(scores)
+print(f"Average: {average}")
+```
+We can also concacatenate lists in python
