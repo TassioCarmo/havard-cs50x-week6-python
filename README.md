@@ -218,6 +218,15 @@ def get_height():
         if n > 0:
             break
     return n
+    
+    
+    or
+    
+    def get_height():
+    while True:
+        n = get_int("Height: ")
+        if n > 0:
+        return
 
 main()
 
