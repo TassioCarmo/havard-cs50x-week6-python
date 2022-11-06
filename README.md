@@ -273,3 +273,10 @@ We can also concacatenate lists in python
  in Python, there aren't technically characters individually. There's only strings, anyway. So I might as well do them all at once. So if I rerun the code now, Python of Uppercase.py.
  
  <code>after = before.upper()</code>
+
+
+## Command-line arguments, exit codes
+
+In python you have to import command args from the sys library
+
+<code>from sys import argv</code>
