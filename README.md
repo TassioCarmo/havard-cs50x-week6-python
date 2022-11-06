@@ -373,6 +373,39 @@ with open("phonebook.csv", "a") as file:
 ```
 
 
+Python is so popular for data science and analytics,because is that it's  really easy to manipulate data, and run analytics.
+
+Reading a file and printing the houses
+```
+import csv
+
+houses = {
+    "Gryffindor": 0,
+    "Hufflepuff": 0,
+    "Ravenclaw": 0,
+    "Slytherin": 0
+}
+
+with open("hogwarts.csv", "r") as file:
+    reader = csv.reader(file)
+    next(reader)
+    for row in reader:
+        house = row[1]
+        houses[house] += 1
+
+for house in houses:
+    count = houses[house]
+    print(f"{house}: {count}")
+----------------------------------------
+#improving
+with open("hogwarts.csv", "r") as file:
+    reader = csv.DictReader(file)
+    for row in reader:
+        house = row["House"]
+        houses[house] += 1
+
+```
+
 ### Other
 
 A restaurant might place food orders in multiple shelves, with areas each labeled by the first letter of the customer’s name. This is an example of a dictionary, where we can map keys to values.
