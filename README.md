@@ -95,4 +95,10 @@ Other types in Python include:
 Integer overflow is no longer going to be an issue
 Floating point imprecision.... oh well there are libraries ¯\\_(ツ)_/¯
 
+### Importing
+```
+import cs50
+
+from cs50 import get_float
+```
 
