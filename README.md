@@ -150,3 +150,4 @@ print(x + y)
 
 
 truncation is no longer an issue in python
+(We can get the same behavior as in C, truncation, with the // operator, like z = x // y.)
