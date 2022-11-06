@@ -75,7 +75,7 @@ for i in range(3):
     print("hello, world")
 ```
 
-#types
+## types
 
 In Python, there are built-in data types similar to those in C:
 
@@ -91,5 +91,8 @@ Other types in Python include:
  -  tuple, sequence of immutable values
  -  dict, dictionaries, collection of key/value pairs, like a hash table
  -  set, collection of unique values, or values without duplicates
+
+Integer overflow is no longer going to be an issue
+Floating point imprecision.... oh well
 
 
