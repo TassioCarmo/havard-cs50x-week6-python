@@ -175,3 +175,7 @@ elif s in ["n", "no"]:
 
 ```
 We can even just say <code>s = get_string("Do you agree? ").lower()</code> to convert the input to lowercase immediately, before we store it in s.
+
+Not only do Strings have functions built into them, because strings are now what we call objects
+
+And we're going to keep seeing examples of this dot operator. They are also immutable,  Immutable means they cannot be changed, which means, unlike C, you can't go into a string and change its individual characters. You can make a copy of the string that makes a change, but you can't change the original string itself. 
