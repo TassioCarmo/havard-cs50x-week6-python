@@ -118,3 +118,35 @@ You might want to have someone smart take a language like C and write it at a ve
  we can cache, or save, the interpreted version of our Python program, so it runs faster after the first time. And Python is actually partially compiled too, into an intermediate step called bytecode, which is then run by the interpreter.
  
  the whole point of using newer, modern languages is to use abstractions that other people have created for you.
+ 
+ ## Input, conditions
+ 
+ There is no more Main method
+ 
+ from cs50 import get_string
+
+answer = get_string("What's your name? ")
+print("hello, " + answer)
+
+input for python treat its returns as string so if you want to get an interger for example you need to cast
+
+### Exceptions
+
+ValueError is a type of exception, or something that goes wrong when our code is running. In Python, we can try to do something, and detect if there is an exception:
+
+```
+try:
+    x = int(input("x: "))
+except ValueError:
+    print("That is not an int!")
+    exit()
+try:
+    y = int(input("y: "))
+except ValueError:
+    print("That is not an int!")
+    exit()
+print(x + y)
+```
+
+
+truncation is no longer an issue in python
