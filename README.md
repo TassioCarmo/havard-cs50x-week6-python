@@ -290,3 +290,11 @@ else:
 ```
 
  Python is not included in argv, whereas in C, dot slash whatever was the first thing. If the analog in Python is that the name of your Python program is the first thing, in bracket 0, which is why David is in bracket 1, the word Python does not appear in the argv list
+
+
+Slicing a list in python which means starting from somewhere beisdes 0
+
+```
+for arg in argv[1:]:
+    print(arg)
+```
