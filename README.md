@@ -4,6 +4,8 @@
 
 ## learning a new languages 
 
+- the goal, when playing around with some new language and learning it, is not to learn it exhaustively. Just like in English or any human language, there's always going to be vocab words you don't know, ways of presenting the same information in some language. That's going to be the case with Python. 
+
 - how is different is the syntax
 
 ## Python syntax (difference in 
