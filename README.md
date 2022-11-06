@@ -64,3 +64,32 @@ while True:
 
 - True is capitalized
 - no more ()
+
+
+for loop, where we can do something for each value in a list:
+```
+for i in [0, 1, 2]:
+    print("hello, world")
+  ----------------  
+for i in range(3):
+    print("hello, world")
+```
+
+#types
+
+In Python, there are built-in data types similar to those in C:
+
+ - bool, True or False
+ - float, real numbers
+ - int, integers which can grow as needed
+ - str, strings
+
+Other types in Python include:
+
+ - range, sequence of numbers
+ -  list, sequence of mutable values, or values we can change
+ -  tuple, sequence of immutable values
+ -  dict, dictionaries, collection of key/value pairs, like a hash table
+ -  set, collection of unique values, or values without duplicates
+
+
