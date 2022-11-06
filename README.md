@@ -260,8 +260,16 @@ scores = []
 for i in range(3):
     score = get_int("Score: ")
     scores.append(score)
+
   
 average = sum(scores) / len(scores)
 print(f"Average: {average}")
 ```
+
+
 We can also concacatenate lists in python
+
+
+ in Python, there aren't technically characters individually. There's only strings, anyway. So I might as well do them all at once. So if I rerun the code now, Python of Uppercase.py.
+ 
+ <code>after = before.upper()</code>
