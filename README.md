@@ -54,4 +54,5 @@ differences:
 - no {} or ()
 - Uses :
 - identention is important
+- else if is now elif
 
