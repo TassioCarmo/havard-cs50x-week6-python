@@ -345,7 +345,35 @@ if name in people:
     print(f"Number: {number}")
 ```
 
+## Files
+
+open a CSV file, with comma-separated values:
+```
+import csv
+from cs50 import get_string
+
+file = open("phonebook.csv", "a")
+
+name = get_string("Name: ")
+number = get_string("Number: ")
+
+writer = csv.writer(file)
+writer.writerow([name, number])
+
+file.close()
+
+```
+
+with keyword, which will close the file for us after we’re finished:
+
+```
+with open("phonebook.csv", "a") as file:
+    writer = csv.writer(file)
+    writer.writerow((name, number))
+```
+
 
 ### Other
 
 A restaurant might place food orders in multiple shelves, with areas each labeled by the first letter of the customer’s name. This is an example of a dictionary, where we can map keys to values.
+
