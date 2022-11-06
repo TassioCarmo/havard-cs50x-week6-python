@@ -295,6 +295,6 @@ else:
 Slicing a list in python which means starting from somewhere beisdes 0
 
 ```
-for arg in argv[1:]:
+for arg in argv[1:]:    #or argv[:-1] for the end of the list
     print(arg)
 ```
