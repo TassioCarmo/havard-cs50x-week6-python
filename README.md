@@ -235,3 +235,13 @@ main()
 
 
 the moment you declare a variable in python is avaible everywhere even if it's nested in a bunch of functions
+
+in Python, you have, not only positional arguments, where you just separate them by commas, to give one or two or three or more arguments. There are also named arguments, which looks weird but is helpful for reasons like this. If you read the documentation, you will see that there is a named argument that Python accepts, called end. And if you set that equal to something, that will be used as the end of every line, instead of the default, which the documentation will also say is quote unquote backslash n. 
+
+
+same line:
+```
+for i in range(4):
+    print("?", end="")
+print()
+```
