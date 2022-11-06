@@ -109,3 +109,6 @@ There is no compilation per say, you jump right into the execution
 
 Python is also the name of a program whose interpret the language, that is why we say python is an interpreted languange not compiled
 
+Even though it's much faster for us to write, we aren’t able to fully optimize our code by way of managing memory and implementing all of the details ourselves.
+
+ If you have a very large data set, you might want to optimize your code to be as fast and performant as it can be, especially if you're running that code again and again. Maybe you're a company like Google. People are searching a huge database all the time. You really want to squeeze every bit of performance as you can out of the computer. 
