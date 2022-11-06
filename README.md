@@ -158,3 +158,19 @@ is no longer an issue in python
 There is no data type for individual characters only strs
 
 we can use "" or '' as long as we are consistent
+
+```
+check if our string is in a list, after converting it to lowercase first:
+
+from cs50 import get_string
+
+s = get_string("Do you agree? ")
+
+s = s.lower()
+
+if s in ["y", "yes"]:
+    print("Agreed.")
+elif s in ["n", "no"]:
+    print("Not agreed.")
+
+```
