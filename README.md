@@ -102,3 +102,10 @@ import cs50
 from cs50 import get_float
 ```
 
+## Libraries
+
+There is no compilation per say, you jump right into the execution
+<code>python hello.py</code>
+
+Python is also the name of a program whose interpret the language, that is why we say python is an interpreted languange not compiled
+
