@@ -179,3 +179,27 @@ We can even just say <code>s = get_string("Do you agree? ").lower()</code> to co
 Not only do Strings have functions built into them, because strings are now what we call objects
 
 And we're going to keep seeing examples of this dot operator. They are also immutable,  Immutable means they cannot be changed, which means, unlike C, you can't go into a string and change its individual characters. You can make a copy of the string that makes a change, but you can't change the original string itself. 
+
+we have define a main function first:
+```
+def main():
+    for i in range(3):
+        meow()
+
+def meow():
+    print("meow")
+
+main()
+
+```
+
+When learning a new language for the first time. You're not going to have heard all of the answers before. Just apply some logic, as to, like, all right, what could explain this symptom. Start to infer how the language does or doesn't worry
+
+### Do while
+
+```
+while True:
+    n = get_int("Height: ")
+    if n > 0:
+        break
+```
