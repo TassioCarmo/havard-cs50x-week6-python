@@ -234,4 +234,4 @@ main()
  if you return from a function, you're done, you're going to exit from right at that point
 
 
-the moment you declare a variable in python is avaible everywhere
+the moment you declare a variable in python is avaible everywhere even if it's nested in a bunch of functions
