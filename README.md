@@ -93,6 +93,6 @@ Other types in Python include:
  -  set, collection of unique values, or values without duplicates
 
 Integer overflow is no longer going to be an issue
-Floating point imprecision.... oh well there are libraries ¯\_(ツ)_/¯
+Floating point imprecision.... oh well there are libraries ¯\\_(ツ)_/¯
 
 
