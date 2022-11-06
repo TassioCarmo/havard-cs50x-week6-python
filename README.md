@@ -406,6 +406,116 @@ with open("hogwarts.csv", "r") as file:
 
 ```
 
+### fun libraries
+
+More libraries
+
+ On our own Mac or PC, we can use another library to convert text to speech (since VS Code in the cloud doesn’t support audio):
+
+    import pyttsx3
+
+    engine = pyttsx3.init()
+    engine.say("hello, world")
+    engine.runAndWait()
+
+   By reading the documentation, we can use a Python library called pyttsx3 to play some string as audio.
+    We can even pass in a format string with engine.say(f"hello, {name}") to say some input.
+  We can use another library, face_recognition, to find faces in images with detect.py:
+
+    # Find faces in picture
+    # https://github.com/ageitgey/face_recognition/blob/master/examples/find_faces_in_picture.py
+      
+    from PIL import Image
+    import face_recognition
+
+    # Load the jpg file into a numpy array
+    image = face_recognition.load_image_file("office.jpg")
+
+    # Find all the faces in the image using the default HOG-based model.
+    # This method is fairly accurate, but not as accurate as the CNN model and not GPU accelerated.
+    # See also: find_faces_in_picture_cnn.py
+    face_locations = face_recognition.face_locations(image)
+      
+    for face_location in face_locations:
+
+        # Print the location of each face in this image
+        top, right, bottom, left = face_location
+
+        # You can access the actual face itself like this:
+        face_image = image[top:bottom, left:right]
+        pil_image = Image.fromarray(face_image)
+        pil_image.show()
+
+   In recognize.py, we can see a program that finds a match for a particular face.
+   In listen0.py, we can respond to input from the user:
+
+    # Recognizes a greeting
+      
+    # Get input
+    words = input("Say something!\n").lower()
+      
+    # Respond to speech
+    if "hello" in words:
+        print("Hello to you too!")
+    elif "how are you" in words:
+        print("I am well, thanks!")
+    elif "goodbye" in words:
+        print("Goodbye to you too!")
+    else:
+        print("Huh?")
+
+   We can recognize audio input from a microphone and respond with listen2.py:
+
+    # Responds to a greeting
+    # https://pypi.org/project/SpeechRecognition/
+      
+    import speech_recognition
+      
+    # Obtain audio from the microphone
+    recognizer = speech_recognition.Recognizer()
+    with speech_recognition.Microphone() as source:
+        print("Say something:")
+        audio = recognizer.listen(source)
+      
+    # Recognize speech using Google Speech Recognition
+    words = recognizer.recognize_google(audio)
+      
+    # Respond to speech
+    if "hello" in words:
+        print("Hello to you too!")
+    elif "how are you" in words:
+        print("I am well, thanks!")
+    elif "goodbye" in words:
+        print("Goodbye to you too!")
+    else:
+        print("Huh?")
+
+   We can even add more logic to listen for a name:
+
+    # Responds to a name
+    # https://pypi.org/project/SpeechRecognition/
+      
+    import re
+    import speech_recognition
+      
+    # Obtain audio from the microphone
+    recognizer = speech_recognition.Recognizer()
+    with speech_recognition.Microphone() as source:
+        print("Say something:")
+        audio = recognizer.listen(source)
+      
+    # Recognize speech using Google Speech Recognition
+    words = recognizer.recognize_google(audio)
+      
+    # Respond to speech
+    matches = re.search("my name is (.*)", words)
+    if matches:
+        print(f"Hey, {matches[1]}.")
+    else:
+        print("Hey, you.")
+
+
+
 ### Other
 
 A restaurant might place food orders in multiple shelves, with areas each labeled by the first letter of the customer’s name. This is an example of a dictionary, where we can map keys to values.
