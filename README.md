@@ -116,3 +116,5 @@ Even though it's much faster for us to write, we aren’t able to fully optimize
 You might want to have someone smart take a language like C and write it at a very low level. It's going to be painful. They're going to have bugs. They're going to have to deal with memory management and the like. But if and when it works correctly, it's going to be much faster,
 
  we can cache, or save, the interpreted version of our Python program, so it runs faster after the first time. And Python is actually partially compiled too, into an intermediate step called bytecode, which is then run by the interpreter.
+ 
+ the whole point of using newer, modern languages is to use abstractions that other people have created for you.
