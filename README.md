@@ -280,3 +280,13 @@ We can also concacatenate lists in python
 In python you have to import command args from the sys library
 
 <code>from sys import argv</code>
+
+```
+
+if len(argv) == 2:
+    print(f"hello, {argv[1]}")
+else:
+    print("hello, world")
+```
+
+ Python is not included in argv, whereas in C, dot slash whatever was the first thing. If the analog in Python is that the name of your Python program is the first thing, in bracket 0, which is why David is in bracket 1, the word Python does not appear in the argv list
