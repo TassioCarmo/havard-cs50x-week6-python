@@ -298,3 +298,21 @@ Slicing a list in python which means starting from somewhere beisdes 0
 for arg in argv[1:]:    #or argv[:-1] for the end of the list
     print(arg)
 ```
+
+## Search
+
+in python Just ask that question. No need for a loop or anything like that. If 0 is in the numbers, go ahead and print out found. And then let's just exit successfully, with 0, else, if we get down here, let's just say print not found. And then we'll CIS exit with 1. 
+
+```
+import sys
+
+numbers = [4, 6, 8, 2, 7, 5, 0]
+
+if 0 in numbers:
+    print("Found")
+    sys.exit(0)
+
+print("Not found")
+sys.exit(1)
+
+```
