@@ -56,3 +56,11 @@ differences:
 - identention is important
 - else if is now elif
 
+```
+while True:
+    print("meow")
+
+```
+
+- True is capitalized
+- no more ()
