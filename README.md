@@ -331,7 +331,7 @@ print("Not found")
 sys.exit(1)
 ```
 If we have a dictionary, a set of key-value pairs, we can also check for a particular key, and look at the value stored for it:
-````
+```
 from cs50 import get_string
 
 people = {
@@ -345,3 +345,7 @@ if name in people:
     print(f"Number: {number}")
 ```
 
+
+### Other
+
+A restaurant might place food orders in multiple shelves, with areas each labeled by the first letter of the customer’s name. This is an example of a dictionary, where we can map keys to values.
