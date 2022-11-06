@@ -147,9 +147,14 @@ except ValueError:
     exit()
 print(x + y)
 ```
+### comparison
+We can compare strings directly with ==, and we can use or and and in our Boolean expressions.
 
-
-truncation is no longer an issue in python
+### truncation
+is no longer an issue in python
 (We can get the same behavior as in C, truncation, with the // operator, like z = x // y.)
 
+### Str
 There is no data type for individual characters only strs
+
+we can use "" or '' as long as we are consistent
