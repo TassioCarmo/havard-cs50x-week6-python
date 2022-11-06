@@ -174,3 +174,4 @@ elif s in ["n", "no"]:
     print("Not agreed.")
 
 ```
+We can even just say <code>s = get_string("Do you agree? ").lower()</code> to convert the input to lowercase immediately, before we store it in s.
