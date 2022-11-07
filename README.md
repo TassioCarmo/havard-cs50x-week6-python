@@ -520,10 +520,16 @@ More libraries
 
 A restaurant might place food orders in multiple shelves, with areas each labeled by the first letter of the customer’s name. This is an example of a dictionary, where we can map keys to values.
 
-Declaring lists/array
+# Declaring lists/array
 ```
 nums= []
 nums= [1, 2, 3, 4]
 nums= [x for x in range(500)]
 ```
 
+Add to the end of the list
+
+nums.append(5)
+nums.insert(4, 5) (position 4 add 5)
+
+nums[len(nums):] = [5] # attach a list the the end of another one
