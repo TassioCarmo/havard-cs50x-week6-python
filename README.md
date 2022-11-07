@@ -44,7 +44,7 @@ Conditionals look like:
 
 if x < y:
     print("x is less than y")
-elif x > y:
+elif not x == y:
     print("x is greater than y")
 else:
     print("x is equal to y")
