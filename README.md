@@ -528,8 +528,43 @@ nums= [x for x in range(500)]
 ```
 
 Add to the end of the list
-
+```
 nums.append(5)
 nums.insert(4, 5) (position 4 add 5)
 
 nums[len(nums):] = [5] # attach a list the the end of another one
+```
+#Tuples 
+are ordered, immutable sets of data; they are great for associating collections of data, sort of like a structin C, but where those values are unlikely to change.
+
+```
+presidents = [
+("George Washington", 1789),
+("John Adams", 1797),
+("Thomas Jefferson", 1801),
+("James Madison", 1809)
+]
+
+This list is iterableas well:
+presidents = [
+("George Washington", 1789),
+("John Adams", 1797),
+("Thomas Jefferson", 1801),
+("James Madison", 1809)
+]
+
+#for prez, year in presidents:
+print("In {1}, {0} took office".format(prez, year))
+```
+
+# Objects
+````
+class Student():
+    def__init__(self, name, id):
+        self.name = name
+        self.id = id
+    defchangeID(self, id):
+        self.id = id
+    defprint(self):
+        print("{} –{}".format(self.name, self.id))
+````
