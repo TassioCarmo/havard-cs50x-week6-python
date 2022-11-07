@@ -558,7 +558,7 @@ print("In {1}, {0} took office".format(prez, year))
 ```
 
 # Objects
-````
+```
 class Student():
     def__init__(self, name, id):
         self.name = name
@@ -567,4 +567,4 @@ class Student():
         self.id = id
     defprint(self):
         print("{} –{}".format(self.name, self.id))
-````
+```
