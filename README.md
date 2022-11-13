@@ -8,7 +8,9 @@
 
 - how is different is the syntax
 
-## Python syntax (difference in 
+## Python syntax 
+
+**INDENT  YOUR CODE**
 
 ### Variable declaration
 
