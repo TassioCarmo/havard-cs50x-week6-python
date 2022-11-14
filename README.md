@@ -509,16 +509,6 @@ More libraries
 
 
 
-### Other
-
-A restaurant might place food orders in multiple shelves, with areas each labeled by the first letter of the customer’s name. This is an example of a dictionary, where we can map keys to values.
-
-# Declaring lists/array
-```
-nums= []
-nums= [1, 2, 3, 4]
-nums= [x for x in range(500)]
-```
 
 Add to the end of the list
 ```
@@ -527,7 +517,7 @@ nums.insert(4, 5) (position 4 add 5)
 
 nums[len(nums):] = [5] # attach a list the the end of another one
 ```
-#Tuples 
+# Tuples 
 are ordered, immutable sets of data; they are great for associating collections of data, sort of like a structin C, but where those values are unlikely to change.
 
 ```
@@ -582,7 +572,17 @@ with open('file_path', 'w') as file:
     file.write('hello world !')
 ```
 
-## others
+### Other
+
+A restaurant might place food orders in multiple shelves, with areas each labeled by the first letter of the customer’s name. This is an example of a dictionary, where we can map keys to values.
+
+# Declaring lists/array
+```
+nums= []
+nums= [1, 2, 3, 4]
+nums= [x for x in range(500)]
+```
+
 
  - If you have a very large data set, you might want to optimize your code to be as fast and performant as it can be, especially if you're running that code again and again. Maybe you're a company like Google. People are searching a huge database all the time. You really want to squeeze every bit of performance as you can out of the computer. 
  
