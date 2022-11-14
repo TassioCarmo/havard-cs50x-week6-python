@@ -108,20 +108,13 @@ from cs50 import get_float
 
 ## Libraries
 
-There is no compilation per say, you jump right into the execution
+- Python is also the name of a program whose interpret the language, that is why we say python is an interpreted languange not compiled
+
+- There is no compilation per say, you jump right into the execution
 <code>python hello.py</code>
 
-Python is also the name of a program whose interpret the language, that is why we say python is an interpreted languange not compiled
+- Even though it's much faster for us to write, we aren’t able to fully optimize our code by way of managing memory and implementing all of the details ourselves.
 
-Even though it's much faster for us to write, we aren’t able to fully optimize our code by way of managing memory and implementing all of the details ourselves.
-
- If you have a very large data set, you might want to optimize your code to be as fast and performant as it can be, especially if you're running that code again and again. Maybe you're a company like Google. People are searching a huge database all the time. You really want to squeeze every bit of performance as you can out of the computer. 
- 
-You might want to have someone smart take a language like C and write it at a very low level. It's going to be painful. They're going to have bugs. They're going to have to deal with memory management and the like. But if and when it works correctly, it's going to be much faster,
-
- we can cache, or save, the interpreted version of our Python program, so it runs faster after the first time. And Python is actually partially compiled too, into an intermediate step called bytecode, which is then run by the interpreter.
- 
- the whole point of using newer, modern languages is to use abstractions that other people have created for you.
  
  ## Input, conditions
  
@@ -152,16 +145,17 @@ except ValueError:
 print(x + y)
 ```
 ### comparison
-We can compare strings directly with ==, and we can use or and and in our Boolean expressions.
+We can compare strings directly with <code>==</code>, and we can use or and and in our Boolean expressions.
 
 ### truncation
 is no longer an issue in python
 (We can get the same behavior as in C, truncation, with the // operator, like z = x // y.)
 
 ### Str
-There is no data type for individual characters only strs
 
-we can use "" or '' as long as we are consistent
+- There is no data type for individual characters aka <code>char</code> only strs
+
+- we can use "" or '' as long as we are consistent
 
 ```
 check if our string is in a list, after converting it to lowercase first:
@@ -180,9 +174,9 @@ elif s in ["n", "no"]:
 ```
 We can even just say <code>s = get_string("Do you agree? ").lower()</code> to convert the input to lowercase immediately, before we store it in s.
 
-Not only do Strings have functions built into them, because strings are now what we call objects
+Strings have functions built into them, because strings are now what we call objects
 
-And we're going to keep seeing examples of this dot operator. They are also immutable,  Immutable means they cannot be changed, which means, unlike C, you can't go into a string and change its individual characters. You can make a copy of the string that makes a change, but you can't change the original string itself. 
+**And we're going to keep seeing examples of this dot operator. They are also immutable,  Immutable means they cannot be changed, which means, unlike C, you can't go into a string and change its individual characters. You can make a copy of the string that makes a change, but you can't change the original string itself. **
 
 we have define a main function first:
 ```
@@ -196,8 +190,6 @@ def meow():
 main()
 
 ```
-
-When learning a new language for the first time. You're not going to have heard all of the answers before. Just apply some logic, as to, like, all right, what could explain this symptom. Start to infer how the language does or doesn't worry
 
 ### Do while
 
@@ -590,3 +582,16 @@ finally:
 with open('file_path', 'w') as file:
     file.write('hello world !')
 ```
+
+## others
+
+ - If you have a very large data set, you might want to optimize your code to be as fast and performant as it can be, especially if you're running that code again and again. Maybe you're a company like Google. People are searching a huge database all the time. You really want to squeeze every bit of performance as you can out of the computer. 
+ 
+- You might want to have someone smart take a language like C and write it at a very low level. It's going to be painful. They're going to have bugs. They're going to have to deal with memory management and the like. But if and when it works correctly, it's going to be much faster,
+
+- we can cache, or save, the interpreted version of our Python program, so it runs faster after the first time. And Python is actually partially compiled too, into an intermediate step called bytecode, which is then run by the interpreter.
+ 
+- the whole point of using newer, modern languages is to use abstractions that other people have created for you.
+
+- When learning a new language for the first time. You're not going to have heard all of the answers before. Just apply some logic, as to, like, all right, what could explain this symptom. Start to infer how the language does or doesn't worry
+
