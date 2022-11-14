@@ -544,6 +544,8 @@ print("In {1}, {0} took office".format(prez, year))
 
 First parameter is always self
 
+Tnotion of methods, properties, and how we work with them is going to be really important to sort of synthesize.
+
 ```
 class Student():
     def__init__(self, name, id):
