@@ -541,6 +541,9 @@ print("In {1}, {0} took office".format(prez, year))
 ```
 
 # Objects
+
+First parameter is always self
+
 ```
 class Student():
     def__init__(self, name, id):
