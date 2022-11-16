@@ -22,7 +22,7 @@ answer = get_string("What's your name? ")
 - Don't need to specify the type 
 - you don't need to use ;
 
-### print
+## print
 
 We can also write: with a format string
 ```
@@ -33,7 +33,7 @@ diferences:
 - we can concatenate two string together with +
 - you don't /n because we get it for free if print
 
-### incremention
+## incremention
 
 - there is no ++ in python
 - so you have to use <code>counter += 1</code>
@@ -53,7 +53,7 @@ else:
 
 ```
 
-differences:
+## Differences:
 
 - no {} or ()
 - Uses :
