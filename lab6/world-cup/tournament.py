@@ -15,22 +15,28 @@ def main():
         sys.exit("Usage: python tournament.py FILENAME")
 
     teams = []
-    # TODO: Read teams into memory from file
-    file_name = (sys.argv[1])
-    with open(file_name,"r") as file:
-        reader = csv.DictReader(file)
-        for row in reader:
-            row["rating"] = int(row["rating"])
-            teams.append(row)
+    # Store the command argument into a variable
+    filename = sys.argv[1]
 
+    # Open the filename calling it f
+    with open(filename) as f:
+        # dicReader()reads that file a row at the time treating each row as a dictionary
+        reader = csv.DictReader(f)
+        for team in reader:
+            # converts the data to int and adds it to the dictonary because every time you read data from a CSV file it'll always be a string by default
+            team["rating"] = int(team["rating"])
+            # add the new to team to the end of list
+            teams.append(team)
+
+    # keep track of number of wins for each team
     counts = {}
-    # TODO: Simulate N tournaments and keep track of win counts
     for i in range(N):
         winner = simulate_tournament(teams)
         if winner in counts:
             counts[winner] += 1
         else:
             counts[winner] = 1
+
     # Print each team's chances of winning, according to simulation
     for team in sorted(counts, key=lambda team: counts[team], reverse=True):
         print(f"{team}: {counts[team] * 100 / N:.1f}% chance of winning")
@@ -60,7 +66,6 @@ def simulate_round(teams):
 
 def simulate_tournament(teams):
     """Simulate a tournament. Return name of winning team."""
-    # TODO
     while len(teams) > 1:
         teams = simulate_round(teams)
     return teams[0]["team"]
