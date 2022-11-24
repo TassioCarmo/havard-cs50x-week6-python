@@ -35,7 +35,7 @@ diferences:
 
 ## incremention
 
-- there is no ++ in python
+- there is no syntax sugar "++" in python.
 - so you have to use <code>counter += 1</code>
 
 
