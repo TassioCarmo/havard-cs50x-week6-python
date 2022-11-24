@@ -1,16 +1,16 @@
 # Introduction to Python
 
-## What did i learn
+## What did i learn?
 
 ## learning a new languages 
 
-- the goal, when playing around with some new language and learning it, is not to learn it exhaustively. Just like in English or any human language, there's always going to be vocab words you don't know, ways of presenting the same information in some language. That's going to be the case with Python. 
+- the goal, when playing around with some new language and learning it, is not to learn it exhaustively. Just like in English or any human language, there's always going to be vocab words you don't know, ways of presenting the same information in some language.
 
-- how is different is the syntax
+- how is different is the syntax?
 
 ## Python syntax 
 
-**INDENT  YOUR CODE**
+**INDENT YOUR CODE**
 
 ### Variable declaration
 
