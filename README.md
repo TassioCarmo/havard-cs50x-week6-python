@@ -227,10 +227,10 @@ def get_height():
 main()
 
 ```
- if you return from a function, you're done, you're going to exit from right at that point
+- if you return from a function, you're done, you're going to exit from right at that point
 
 
-the moment you declare a variable in python is avaible everywhere even if it's nested in a bunch of functions
+ - the moment you declare a variable in python is avaible everywhere even if it's nested in a bunch of functions
 
 in Python, you have, not only positional arguments, where you just separate them by commas, to give one or two or three or more arguments. There are also named arguments, which looks weird but is helpful for reasons like this.
 
